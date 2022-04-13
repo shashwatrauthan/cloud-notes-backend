@@ -18,7 +18,7 @@ app.use('/api/notes',require("./routes/notes"));
 
 
 app.get('/test',(req,res)=>{
-  res.send("Successful");
+  res.send("Successful"+process.env.MONGO_URI);
 })
 
 
